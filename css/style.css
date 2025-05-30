@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "yekan";
+    src: url("Yekan.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: yellow;
+    font-family: yekan;
+    direction: rtl;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: yellow;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+div.head {
+    /* background-color: black; */
+    text-align: center;
+}
+
+img.logo {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 100px;
+    animation-name: logo-anim;
+    animation-duration: 1.5s;
+    transition-duration: 0.5s;
+}
+
+img.logo:hover {
+    scale: 1.1;
+}
+
+p.title {
+    color: black;
+    font-size: 35px;
+    animation-name: logo-anim;
+    animation-duration: 1s;
+}
+
+@keyframes logo-anim {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+div.info {
+    border-style: solid;
+    border-color: black;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    animation-name: body-anim;
+    animation-duration: 1s;
+    border-width: 3px;
+    transition-duration: 0.5s;
+}
+
+div.info:hover {
+    box-shadow: 0px 0px 15px black;
+}
+
+@keyframes body-anim {
+    from {
+        opacity: 0%;
+        margin-top: 500px;
+    }
+    to {
+        opacity: 100%;
+        margin-top: 30px;
+    }
+}
+
+div.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+a.links {
+    text-decoration: none;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+    transition-duration: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.links:hover {
+    scale: 1.1;
+    box-shadow: 0px 0px 15px black;
+}
+
+img.footerImages {
+    max-width: 500px;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0px 0px 5px grey;
+}
+
+@media only screen and (max-width: 600px) {
+    img.footerImages {
+    max-width: 200px;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0px 0px 5px grey;
+}
+}
